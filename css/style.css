@@ -387,8 +387,12 @@ p.span__gold {
     min-height: 1080px;
     background: url('/img/5page/bg.png') 0 0/cover no-repeat;
     padding-top: 100px;
+}
+.page5__wrapper{
     position: relative;
-    overflow: hidden;
+    min-height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .page5__title {
     white-space: nowrap;
@@ -566,9 +570,14 @@ p.span__gold {
 
 .page6 {
     min-height: 1080px;
-    position: relative;
     overflow: hidden;
     background: url('/img/5page/bg.png') 0 0/cover no-repeat;
+}
+.page6__wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 1080px;
 }
 .page6__images {
 
@@ -630,6 +639,9 @@ p.span__gold {
 .page7 {
     min-height: 1080px;
     position: relative;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
 }
 .page7__title {
     margin: 50px auto 90px;
@@ -695,3 +707,176 @@ p.span__gold {
     max-width: 330px;
 }
 
+/* Page 9 */
+
+.page9{
+    min-height: 1000px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.page9__title {
+    margin: 50px auto;
+}
+.page9__game {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game {
+    height: 520px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.page9__button{
+
+}
+.page9__link{
+    transition: filter .2s linear
+}
+.page9__link:hover{
+    filter: invert(1);
+}
+
+/* Page 10 */
+.page10 {
+    min-height: 1080px;
+    background: url('/img/5page/bg.png') 0 0/cover no-repeat;
+}
+.page10__wrapper{
+    position: relative;
+    min-height: 1080px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.page10__contacts {
+    max-width: 900px;
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+    border: 3px solid #21EF80;
+    background-color: #000;
+    position: relative;
+    z-index: 20;
+    margin-right: 300px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contacts__title {
+    margin-bottom: 50px;
+    font-size: 60px;
+    color: #21EF80;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+.contacts__title--double {
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translate(-51%, 0);
+    color: #ff63d8;
+    z-index: 1;
+}
+.contacts__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacts__text {
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.contacts__email {
+    margin-bottom: 25px;
+    color: #21EF80;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.contacts__tel {
+    color: #FDD507;
+}
+.contacts__telegram {
+    color: #ff63d8;
+}
+.page10__images {
+}
+.page10__border {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+}
+.page10__grass1 {
+    position: absolute;
+    bottom: 120px;
+    z-index: 1;
+    right: -30px;
+
+}
+.page10__grass2 {
+    position: absolute;
+    bottom: 120px;
+    right: 150px;
+
+}
+.page10__car {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    z-index: 5;
+}
+.page10__bus {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    z-index: 2;
+
+}
+.page10__sit {
+    position: absolute;
+    bottom: 120px;
+    left: 800px;
+    z-index: 1;
+
+}
+.page10__sky {
+    position: absolute;
+    top: 300px;
+    left: 640px;
+    z-index: 0;
+}
+.page10__sky2 {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    z-index: 0;
+}
+.page10__vishka {
+    position: absolute;
+    bottom: 120px;
+    left: -50px;
+    z-index: 1;
+}
+.page10__heart {
+    position: absolute;
+    mix-blend-mode: screen;
+    top: -25px;
+    left: 150px;
+    transform: scale(.3);
+}
