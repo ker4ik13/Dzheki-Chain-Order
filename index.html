@@ -9,34 +9,36 @@
     <title>Главная</title>
 </head>
 <body>
-	<div class="wrapper">
-        <nav class="nav">
-            <div class="nav__container">
-                <nav class="nav__left">
-                    <img src="/img/1page/menu.png" alt="Меню">
-                </nav>
-                <nav class="nav__right">
-                    <img src="/img/1page/hearts.png" alt="Сердечки">
-                    <img src="/img/1page/gif-battery.gif" alt="Батарея">
-                </nav>
-            </div>
-        </nav>
+
+<div class="wrapper">
+    <nav class="nav">
+        <div class="nav__container">
+            <nav class="nav__left" data-scroll="#page3" id="nav__btn">
+                <img src="/img/1page/menu.png" alt="Меню">
+            </nav>
+            <nav class="nav__right">
+                <img src="/img/1page/hearts.png" alt="Сердечки">
+                <img src="/img/1page/gif-battery.gif" alt="Батарея">
+            </nav>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="page1" id="page1">
+            <div class="page1__content">
+                <div class="page1__top">
+                    <img class="page1__img" src="/img/1page/logo.png" alt="Логотип">
+                    <p class="page1__logoText">nft - агенство</p>
+                </div>
+                <div class="page1__bottom">
+                    <h1 class="page1__titleText">Джеки Чейн</h1>
+                    <p class="page1__titleText--double">Джеки Чейн</p>
+                </div>
+            </div><!-- page1__content -->
+        </section><!-- page1 -->
+    </div><!-- container -->
+    <section class="page2" id="page2">
         <div class="container">
-            <section class="page1">
-                <div class="page1__content">
-                    <div class="page1__top">
-                        <img class="page1__img" src="/img/1page/logo.png" alt="Логотип">
-                        <p class="page1__logoText">nft - агенство</p>
-                    </div>
-                    <div class="page1__bottom">
-                        <h1 class="page1__titleText">Джеки Чейн</h1>
-                        <p class="page1__titleText--double">Джеки Чейн</p>
-                    </div>
-                </div><!-- page1__content -->
-            </section><!-- page1 -->
-        </div><!-- container -->
-        <section class="page2">
-            <div class="container flex__container">
+            <div class="flex__container">
                 <div class="page2__text">
                     <p class="page2__text1">Философия джеки</p>
                     <div class="page2__text__wrapper">
@@ -55,250 +57,248 @@
                         <img src="/img/2page/start.png" alt="Старт" class="page2__start">
                     </div>
                     <div class="page2__arrows">
-                        <img src="/img/2page/arrow1.png" alt="" class="arrow1">
-                        <img src="/img/2page/arrow2.png" alt="" class="arrow2">
+                        <div class="arrow"></div>
                     </div>
-                </div>
-            </div><!-- container -->
-        </section><!-- page2 -->
-
-        <section class="page3">
-            <div class="container">
-                <div class="menu__button">
-                    <img src="/img/3page/menu.png" alt="Меню">
-                </div>
-                <div class="menu__title">
-                    <img class="button__gif1 button__gif" src="/img/3page/lightning.gif" alt="">
-                    <p>Кинуть сюрикен заказа</p>
-                    <img class="button__gif2 button__gif" src="/img/3page/lightning.gif" alt="">
-                </div>
-                <div class="menu__items">
-                    <a href="#" class="menu__item"><p>Джеки - <span>кейсы</span></p></a>
-                    <a href="#" class="menu__item"><p><span>Магазинчик</span> Джеки Чейна</p></a>
-                    <a href="#" class="menu__item"><p>О Джеки <span>пишут</span></p></a>
-                    <a href="#" class="menu__item"><p>Джеки - <span>мемы</span></p></a>
-                    <a href="#" class="menu__item"><p><span>Философия</span> Джеки</p></a>
-                    <a href="#" class="menu__item"><p><p class="span__gold">Выйграй нфт</p></p></a>
-                </div>
-            </div><!-- container -->
-        </section><!-- page3 -->
-
-        <section class="page4">
-            <div class="container">
-                <div class="page4__title">
-                    <p>Джеки - кейсы</p>
-                </div>
-
-                <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="3000" data-swipe="true" data-refresh="true">
-                    <div class="itc-slider__wrapper">
-                    <div class="itc-slider__items">
-                        <div class="itc-slider__item">
-
-                            <div class="slider__item">
-                                <div class="slider__item__image">
-                                    <img src="/img/4page/1.png" alt="" class="slider__img">
-                                </div>
-                                <div class="slider__item__button">
-                                    <p>Бродский</p>
-                                </div>
-                            </div>
-
-                        </div><!-- itc-slider__item -->
-                        <div class="itc-slider__item">
-                            <div class="slider__item">
-                                <div class="slider__item__image">
-                                    <img src="/img/4page/2.png" alt="" class="slider__img">
-                                </div>
-                                <div class="slider__item__button">
-                                    <p>Тедди</p>
-                                </div>
-                            </div>
-                        </div><!-- itc-slider__item -->
-                        <div class="itc-slider__item">
-                            <div class="slider__item">
-                                <div class="slider__item__image">
-                                    <img src="/img/4page/3.png" alt="" class="slider__img">
-                                </div>
-                                <div class="slider__item__button">
-                                    <p>Ночлежка</p>
-                                </div>
-                            </div>
-                        </div><!-- itc-slider__item -->
-                        <div class="itc-slider__item">
-                            <div class="slider__item">
-                                <div class="slider__item__image slider__item__image--rocket">
-                                    <img src="/img/4page/4.jpg" alt="" class="slider__img slider__img--rocket">
-                                </div>
-                                <div class="slider__item__button">
-                                    <p>Миллионпросмотров</p>
-                                </div>
-                            </div>
-                        </div><!-- itc-slider__item -->
-
-                    </div><!-- itc-slider__items -->
-                    <button class="itc-slider__btn itc-slider__btn_prev"></button>
-                    <button class="itc-slider__btn itc-slider__btn_next"></button>
-                    </div><!-- itc-slider__wrapper -->
-                </div><!-- itc-slider -->
-            </div><!-- container -->
-        </section><!-- page4 -->
-
-        <section class="page5">
-            <div class="page5__wrapper">
-                <div class="page5__title">
-                    <p>Что можно заказать?</p>
-                    <p class="page5__title--double">Что можно заказать?</p>
-                </div>
-                <div class="page5__subtitle">
-                    <p>Жми на магазинчик</p>
-                    <p class="page5__subtitle--double">Жми на магазинчик</p>
-                    <img src="/img/5page/button.png" alt="">
-                </div>
-                <div class="page5__images">
-                    <img src="/img/5page/border.png" alt="" class="page5__border">
-                    <a href="#"><img src="/img/5page/shop.png" alt="Магазин" class="page5__shop"></a>
-                    <img src="/img/5page/grass.png" alt="" class="page5__grass1">
-                    <img src="/img/5page/grass.png" alt="" class="page5__grass2">
-                    <img src="/img/5page/grass.png" alt="" class="page5__grass3">
-                    <img src="/img/5page/grass.png" alt="" class="page5__grass4">
-                    <img src="/img/5page/grass.png" alt="" class="page5__grass5">
-                    <img src="/img/5page/grass.png" alt="" class="page5__grass6">
-                    <img src="/img/5page/fire.png" alt="" class="page5__fire">
-                    <img src="/img/5page/weapon1.png" alt="" class="page5__weapon1">
-                    <img src="/img/5page/weapon2.png" alt="" class="page5__weapon2">
-                    <img src="/img/5page/box1.png" alt="" class="page5__box1">
-                    <img src="/img/5page/box2.png" alt="" class="page5__box2">
-                    <img src="/img/5page/box3.png" alt="" class="page5__box3">
-                    <img src="/img/5page/box4.png" alt="" class="page5__box4">
-                    <img src="/img/5page/star.png" alt="" class="page5__star1">
-                    <img src="/img/5page/star.png" alt="" class="page5__star2">
                 </div>
             </div>
-        </section><!-- page5 -->
-
-        <section class="page6">
-            <div class="page6__wrapper">
-                <div class="page6__images">
-                    <img src="/img/5page/border.png" alt="" class="page6__border">
-                    <img src="/img/5page/shop.png" alt="" class="page6__shop">
-                    <img src="/img/5page/grass.png" alt="" class="page6__grass">
-                    <img src="/img/5page/fire.png" alt="" class="page6__fire">
+            
+        </div><!-- container -->
+    </section><!-- page2 -->
+    <section class="page3" id="page3">
+        <div class="container">
+            <div class="menu__button">
+                <img src="/img/3page/menu.png" alt="Меню">
+            </div>
+            <div class="menu__title"  data-scroll="#page10">
+                <img class="button__gif1 button__gif" src="/img/3page/lightning.gif" alt="">
+                <p>Кинуть сюрикен заказа</p>
+                <img class="button__gif2 button__gif" src="/img/3page/lightning.gif" alt="">
+            </div>
+            <div class="menu__items">
+                <a href="#" class="menu__item" data-scroll="#page4"><p>Джеки - <span>кейсы</span></p></a>
+                <a href="#" class="menu__item" data-scroll="#page5"><p><span>Магазинчик</span> Джеки Чейна</p></a>
+                <a href="#" class="menu__item" data-scroll="#page7"><p>О Джеки <span>пишут</span></p></a>
+                <a href="#" class="menu__item" data-scroll="#page8"><p>Джеки - <span>мемы</span></p></a>
+                <a href="#" class="menu__item" data-scroll="#page2"><p><span>Философия</span> Джеки</p></a>
+                <a href="#" class="menu__item" data-scroll="#page9"><p><p class="span__gold">Выйграй нфт</p></p></a>
+            </div>
+        </div><!-- container -->
+    </section><!-- page3 -->
+    <section class="page4" id="page4">
+        <div class="container">
+            <div class="page4__title">
+                <p>Джеки - кейсы</p>
+            </div>
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="3000" data-swipe="true" data-refresh="true">
+                <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                        <div class="slider__item">
+                            <div class="slider__item__image">
+                                <a href="https://kefirium.ru/collection/940" target="_blank"><img src="/img/4page/1.png" alt="" class="slider__img"></a>
+                            </div>
+                            <a class="slider__item__button" target="_blank" href="https://kefirium.ru/collection/940">Бродский</a>
+                        </div>
+                    </div><!-- itc-slider__item -->
+                    <div class="itc-slider__item">
+                        <div class="slider__item">
+                            <div class="slider__item__image">
+                                <a class="slider__item__image__link" target="_blank" href="https://kefirium.ru/collection/718"><img src="/img/4page/3.png" alt="" class="slider__img"></a>
+                            </div>
+                            <a class="slider__item__button" target="_blank" href="https://kefirium.ru/collection/718">Ночлежка</a>
+                        </div>
+                    </div><!-- itc-slider__item -->
+                    <div class="itc-slider__item">
+                        <div class="slider__item">
+                            <div class="slider__item__image slider__item__image--rocket">
+                                <a href="https://kefirium.ru/collection/361" target="_blank"><img src="/img/4page/4.jpg" alt="" class="slider__img slider__img--rocket"></a>
+                            </div>
+                            <a class="slider__item__button" target="_blank" href="https://kefirium.ru/collection/361">Миллионпросмотров</a>
+                        </div>
+                    </div><!-- itc-slider__item -->
+                    <div class="itc-slider__item">
+                        <div class="slider__item">
+                            <div class="slider__item__image">
+                                <a href="https://kefirium.ru/collection/940" target="_blank"><img src="/img/4page/1.png" alt="" class="slider__img"></a>
+                            </div>
+                            <a class="slider__item__button" target="_blank" href="https://kefirium.ru/collection/940">Бродский</a>
+                        </div>
+                    </div><!-- itc-slider__item -->
+                    <div class="itc-slider__item">
+                        <div class="slider__item">
+                            <div class="slider__item__image">
+                                <a class="slider__item__image__link" target="_blank" href="https://kefirium.ru/collection/718"><img src="/img/4page/3.png" alt="" class="slider__img"></a>
+                            </div>
+                            <a class="slider__item__button" target="_blank" href="https://kefirium.ru/collection/718">Ночлежка</a>
+                        </div>
+                    </div><!-- itc-slider__item -->
+                    <div class="itc-slider__item">
+                        <div class="slider__item">
+                            <div class="slider__item__image slider__item__image--rocket">
+                                <a href="https://kefirium.ru/collection/361" target="_blank"><img src="/img/4page/4.jpg" alt="" class="slider__img slider__img--rocket"></a>
+                            </div>
+                            <a class="slider__item__button" target="_blank" href="https://kefirium.ru/collection/361">Миллионпросмотров</a>
+                        </div>
+                    </div><!-- itc-slider__item -->
+                    
+                </div><!-- itc-slider__items -->
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
+                </div><!-- itc-slider__wrapper -->
+            </div><!-- itc-slider -->
+        </div><!-- container -->
+    </section><!-- page4 -->
+    <section class="page5" id="page5">
+        <div class="page5__wrapper">
+            <div class="page5__title">
+                <p>Что можно заказать?</p>
+                <p class="page5__title--double">Что можно заказать?</p>
+            </div>
+            <div class="page5__subtitle">
+                <p>Жми на магазинчик</p>
+                <p class="page5__subtitle--double">Жми на магазинчик</p>
+                <img src="/img/5page/button.png" alt="">
+            </div>
+            <div class="page5__images">
+                <img src="/img/5page/border.png" alt="" class="page5__border">
+                <a href="#"><img src="/img/5page/shop.png" alt="Магазин" class="page5__shop" data-scroll="#page6"></a>
+                <img src="/img/5page/grass.png" alt="" class="page5__grass1">
+                <img src="/img/5page/grass.png" alt="" class="page5__grass2">
+                <img src="/img/5page/grass.png" alt="" class="page5__grass3">
+                <img src="/img/5page/grass.png" alt="" class="page5__grass4">
+                <img src="/img/5page/grass.png" alt="" class="page5__grass5">
+                <img src="/img/5page/grass.png" alt="" class="page5__grass6">
+                <img src="/img/5page/fire.png" alt="" class="page5__fire">
+                <img src="/img/5page/weapon1.png" alt="" class="page5__weapon1">
+                <img src="/img/5page/weapon2.png" alt="" class="page5__weapon2">
+                <img src="/img/5page/box1.png" alt="" class="page5__box1">
+                <img src="/img/5page/box2.png" alt="" class="page5__box2">
+                <img src="/img/5page/box3.png" alt="" class="page5__box3">
+                <img src="/img/5page/box4.png" alt="" class="page5__box4">
+                <img src="/img/5page/star.png" alt="" class="page5__star1">
+                <img src="/img/5page/star.png" alt="" class="page5__star2">
+            </div>
+        </div>
+    </section><!-- page5 -->
+    <section class="page6" id="page6">
+        <div class="page6__wrapper">
+            <div class="page6__images">
+                <img src="/img/5page/border.png" alt="" class="page6__border">
+                <img src="/img/5page/shop.png" alt="" class="page6__shop">
+                <img src="/img/5page/grass.png" alt="" class="page6__grass">
+                <img src="/img/5page/fire.png" alt="" class="page6__fire">
+            </div>
+            <div class="page6__items">
+                <div class="page6__item green__item">Изготовление коллекций</div>
+                <div class="page6__item">Минтинг</div>
+                <div class="page6__item">Офигенный дизайн</div>
+                <div class="page6__item green__item">Лихое продвижение</div>
+                <div class="page6__item green__item">Разработка "Road map"</div>
+                <div class="page6__item">Убойный креатив</div>
+                <div class="page6__item">Коллабы с селебами</div>
+                <div class="page6__item green__item">Любая дичь</div>
+            </div>
+        </div>
+    </section><!-- page6 -->
+    <section class="page7" id="page7">
+        <div class="container">
+            <div class="page4__title page7__title">
+                <p>О нас пишут</p>
+            </div>
+            <div class="page7__image">
+                <img src="/img/7page/comp.png" alt="Компьютер">
+            </div>
+            <div class="page7__items">
+                <a target="_blank" href="https://www.iguides.ru/blogs/it-news-now/blagotvoritelnaya-organizatsiya-nochlezhka-sovmestno-s-nftmarketpleyso/" class="page7__item">В форбс</a>
+                <a target="_blank" href="https://www.timeout.ru/feature/nochlezhka-vypustila-nft-kollekcziyu" class="page7__item">В таймаут</a>
+                <a target="_blank" href="https://www.sobaka.ru/lifestyle/technology/162222" class="page7__item">В собаке</a>
+                <a target="_blank" href="https://www.sobaka.ru/lifestyle/technology/162222" class="page7__item">В собаке</a>
+                <a target="_blank" href="https://www.sobaka.ru/lifestyle/technology/162222" class="page7__item">В собаке</a>
+            </div>
+        </div><!-- container -->
+    </section><!-- page7 -->
+    <section class="page8" id="page8">
+        <div class="container">
+            <div class="page4__title page8__title">
+                <p>Джеки - мемы!</p>
+            </div>
+            <div class="page8__memes">
+                <div class="page8__memes__wrapper">
+                    <div class="page8__mem">
+                        <img src="/img/memes/1.png" alt="" class="page8__mem__img">
+                    </div>
+                    <div class="page8__mem">
+                        <img src="/img/memes/2.png" alt="" class="page8__mem__img">
+                    </div>
+                    <div class="page8__mem">
+                        <img src="/img/memes/3.png" alt="" class="page8__mem__img">
+                    </div>
+                    <div class="page8__mem">
+                        <img src="/img/memes/4.png" alt="" class="page8__mem__img">
+                    </div>
                 </div>
-                <div class="page6__items">
-                    <div class="page6__item green__item">Изготовление коллекций</div>
-                    <div class="page6__item">Минтинг</div>
-                    <div class="page6__item">Офигенный дизайн</div>
-                    <div class="page6__item green__item">Лихое продвижение</div>
-                    <div class="page6__item green__item">Разработка "Road map"</div>
-                    <div class="page6__item">Убойный креатив</div>
-                    <div class="page6__item">Коллабы с селебами</div>
-                    <div class="page6__item green__item">Любая дичь</div>
+                <div class="page8__memes__wrapper">
+                    <div class="page8__mem">
+                        <img src="/img/memes/5.png" alt="" class="page8__mem__img">
+                    </div>
+                    <div class="page8__mem">
+                        <img src="/img/memes/6.png" alt="" class="page8__mem__img">
+                    </div>
+                    <div class="page8__mem">
+                        <img src="/img/memes/7.png" alt="" class="page8__mem__img">
+                    </div>
+                    <div class="page8__mem">
+                        <img src="/img/memes/8.png" alt="" class="page8__mem__img">
+                    </div>
                 </div>
             </div>
-        </section><!-- page6 -->
-
-        <section class="page7">
-            <div class="container">
-                <div class="page4__title page7__title">
-                    <p>О нас пишут</p>
+        </div><!-- container -->
+    </section><!-- page8 -->
+    <section class="page9" id="page9">
+        <div class="container">
+            <div class="page4__title page9__title">
+                <p>Выйграй nft!</p>
+            </div>
+            <div class="page9__game">
+                <iframe class="game" src="https://supermario-game.com/ru/fullscreen" frameborder="0" scrolling="no"></iframe>
+                <div class="page9__button">
+                    <a target="_blank" href="https://supermario-game.com/ru/fullscreen" class="page9__link"><img src="/img/2page/start.png" alt="Старт"></a>
                 </div>
-                <div class="page7__image">
-                    <img src="/img/7page/comp.png" alt="Компьютер">
-                </div>
-                <div class="page7__items">
-                    <a href="#" class="page7__item">В форбс</a>
-                    <a href="#" class="page7__item">В таймаут</a>
-                    <a href="#" class="page7__item">В собаке</a>
-                    <a href="#" class="page7__item">В собаке</a>
-                    <a href="#" class="page7__item">В собаке</a>
-                </div>
-            </div><!-- container -->
-        </section><!-- page7 -->
-
-        <section class="page8">
-            <div class="container">
-                <div class="page4__title page8__title">
-                    <p>Джеки - мемы!</p>
-                </div>
-                <div class="page8__memes">
-                    <div class="page8__memes__wrapper">
-                        <div class="page8__mem">
-                            <img src="/img/memes/1.png" alt="" class="page8__mem__img">
-                        </div>
-                        <div class="page8__mem">
-                            <img src="/img/memes/2.png" alt="" class="page8__mem__img">
-                        </div>
-                        <div class="page8__mem">
-                            <img src="/img/memes/3.png" alt="" class="page8__mem__img">
-                        </div>
-                        <div class="page8__mem">
-                            <img src="/img/memes/4.png" alt="" class="page8__mem__img">
-                        </div>
+            </div>
+            
+        </div><!-- container -->
+    </section><!-- page9 -->
+    <section class="page10" id="page10">
+        <div class="page10__wrapper">
+                <div class="page10__contacts">
+                    <div class="contacts__title">
+                        <p>Контакты</p>
+                        <p class="contacts__title--double">Контакты</p>
                     </div>
-                    <div class="page8__memes__wrapper">
-                        <div class="page8__mem">
-                            <img src="/img/memes/5.png" alt="" class="page8__mem__img">
-                        </div>
-                        <div class="page8__mem">
-                            <img src="/img/memes/6.png" alt="" class="page8__mem__img">
-                        </div>
-                        <div class="page8__mem">
-                            <img src="/img/memes/7.png" alt="" class="page8__mem__img">
-                        </div>
-                        <div class="page8__mem">
-                            <img src="/img/memes/8.png" alt="" class="page8__mem__img">
-                        </div>
+                    <div class="contacts__content">
+                        <p class="contacts__text">Пишите джеки по адресу:</p>
+                        <p class="contacts__email">jackie-chain@mail.ru</p>
+                        <p class="contacts__text">Whatsapp <span class="contacts__tel">+79067357126</span></p>
+                        <p class="contacts__text">Telegram <span class="contacts__telegram">@jackiechain</span></p>
                     </div>
                 </div>
-            </div><!-- container -->
-        </section><!-- page8 -->
+                <div class="page10__images">
+                    <img src="/img/5page/border.png" alt="" class="page10__border">
+                    <img src="/img/5page/grass.png" alt="" class="page10__grass1">
+                    <img src="/img/5page/grass.png" alt="" class="page10__grass2">
+                    <img src="/img/10page/car.png" alt="" class="page10__car">
+                    <img src="/img/10page/bus.png" alt="" class="page10__bus">
+                    <img src="/img/10page/sit.png" alt="" class="page10__sit">
+                    <img src="/img/10page/sky.png" alt="" class="page10__sky">
+                    <img src="/img/10page/sky.png" alt="" class="page10__sky2">
+                    <img src="/img/10page/vishka.png" alt="" class="page10__vishka">
+                    <img src="/img/10page/heart.gif" alt="" class="page10__heart">
 
-        <section class="page9">
-            <div class="container">
-                <div class="page4__title page9__title">
-                    <p>Выйграй nft!</p>
                 </div>
-                <div class="page9__game">
-                    <iframe class="game" src="https://supermario-game.com/ru/fullscreen" frameborder="0" scrolling="no"></iframe>
-                    <div class="page9__button">
-                        <a target="_blank" href="https://supermario-game.com/ru/fullscreen" class="page9__link"><img src="/img/2page/start.png" alt="Старт"></a>
-                    </div>
-                </div>
-                
-            </div><!-- container -->
-        </section><!-- page9 -->
-
-        <section class="page10">
-            <div class="page10__wrapper">
-                    <div class="page10__contacts">
-                        <div class="contacts__title">
-                            <p>Контакты</p>
-                            <p class="contacts__title--double">Контакты</p>
-                        </div>
-                        <div class="contacts__content">
-                            <p class="contacts__text">Пишите джеки по адресу:</p>
-                            <p class="contacts__email">jackie-chain@mail.ru</p>
-                            <p class="contacts__text">Whatsapp <span class="contacts__tel">+79067357126</span></p>
-                            <p class="contacts__text">Telegram <span class="contacts__telegram">@jackiechain</span></p>
-                        </div>
-                    </div>
-                    <div class="page10__images">
-                        <img src="/img/5page/border.png" alt="" class="page10__border">
-                        <img src="/img/5page/grass.png" alt="" class="page10__grass1">
-                        <img src="/img/5page/grass.png" alt="" class="page10__grass2">
-                        <img src="/img/10page/car.png" alt="" class="page10__car">
-                        <img src="/img/10page/bus.png" alt="" class="page10__bus">
-                        <img src="/img/10page/sit.png" alt="" class="page10__sit">
-                        <img src="/img/10page/sky.png" alt="" class="page10__sky">
-                        <img src="/img/10page/sky.png" alt="" class="page10__sky2">
-                        <img src="/img/10page/vishka.png" alt="" class="page10__vishka">
-                        <img src="/img/10page/heart.gif" alt="" class="page10__heart">
-    
-                    </div>
-            </div><!-- page10__wrapper -->
-        </section><!-- page10 -->
-
-    </div><!-- wrapper -->
+        </div><!-- page10__wrapper -->
+    </section><!-- page10 -->
+</div><!-- wrapper -->
+<script src="/js/jquery-3.6.3.min.js"></script>
 <script src="/js/app.js"></script>
 <script src="/js/itc-slider.js"></script>
 </body>

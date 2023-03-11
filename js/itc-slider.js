@@ -151,6 +151,9 @@ class ItcSlider {
   }
 
   #onClick(e) {
+    if (!(e.target.closest('.itc-slider__btn') || e.target.closest('.itc-slider__indicators'))) {
+      return;
+    }
     e.preventDefault();
     const classBtnPrev = this.#state.prefix + this.constructor.#BTN_PREV;
     const classBtnNext = this.#state.prefix + this.constructor.#BTN_NEXT;
@@ -178,13 +181,10 @@ class ItcSlider {
   }
 
   #onSwipeStart(e) {
-    if (!e.target.closest('.itc-slider__btn')) {
-      e.preventDefault();
-      this.#autoplay('stop');
-      const event = e.type.search('touch') === 0 ? e.touches[0] : e;
-      this.#state.swipeX = event.clientX;
-      this.#state.isSwiping = true;
-    }
+    this.#autoplay('stop');
+    const event = e.type.search('touch') === 0 ? e.touches[0] : e;
+    this.#state.swipeX = event.clientX;
+    this.#state.isSwiping = true;
   }
 
   #onSwipeEnd(e) {

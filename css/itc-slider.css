@@ -7,11 +7,8 @@
  * @tutorial https://itchief.ru/javascript/slider
  */
 
-.itc-slider {
+ .itc-slider {
   position: relative;
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .itc-slider__wrapper {
@@ -36,6 +33,7 @@
 }
 
 /* кнопки влево и вправо */
+/* кнопки влево и вправо */
 .itc-slider__btn {
   position: absolute;
   top: calc(50% - 100px);
@@ -59,7 +57,7 @@
 }
 
 .itc-slider__btn_next {
-  right: -100px;
+  right: -80px;
 }
 
 .itc-slider__btn:hover,
@@ -91,7 +89,7 @@
 .itc-slider__indicators {
   position: absolute;
   right: 0;
-  bottom: -70px;
+  bottom: 0;
   left: 0;
   z-index: 15;
   display: flex;
@@ -104,23 +102,18 @@
 .itc-slider__indicator {
   flex: 0 1 auto;
   box-sizing: content-box;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin-right: 7px;
-  margin-left: 7px;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
   text-indent: -999px;
-  background-color: rgb(182 255 124 / 60%);
+  background-color: rgb(255 255 255 / 50%);
   background-clip: padding-box;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   cursor: pointer;
-  transition: all .2s linear;
-}
-.itc-slider__indicator:hover{
-  background-color: rgb(182 255 124 / 90%);
 }
 
 .itc-slider__indicator_active {
-  background-color: rgb(182 255 124 / 100%);
+  background-color: rgb(255 255 255 / 90%);
 }
