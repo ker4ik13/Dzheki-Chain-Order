@@ -53,11 +53,13 @@
 }
 
 .itc-slider__btn_prev {
-  left: -100px
+  left: -100px;
+  mix-blend-mode: screen;
 }
 
 .itc-slider__btn_next {
   right: -80px;
+  mix-blend-mode: screen;
 }
 
 .itc-slider__btn:hover,
