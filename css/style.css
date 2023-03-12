@@ -1110,9 +1110,12 @@ p.span__gold {
         top: -190px;
         transform: scale(.6);
     }
+    .page2__arrows{
+        transform: scale(.8);
+    }
     .arrow {
-        top: 248px;
-        left: -1398px;
+        top: 279px;
+        left: -1733px;
     }
     .page4{
         min-height: 700px;
@@ -1219,9 +1222,11 @@ p.span__gold {
     }
     .page5__star1{
         top: 100px;
+        max-width: 40px;
     }
     .page5__star2{
         top: 100px;
+        max-width: 40px;
     }
 }
 @media(max-width: 1300px){
@@ -1325,7 +1330,7 @@ p.span__gold {
         top: -223px;
     }
     .arrow {
-        top: 175px;
+        top: 275px;
         left: -432px;
     }
     .page3{
@@ -1622,6 +1627,36 @@ p.span__gold {
     .page5__grass2, .page5__grass4{
         display: none;
     }
+    .page10__wrapper, .page10{
+        min-height: 640px;
+    }
+    .page10__contacts{
+        min-width: 900px;
+        transform: scale(.4) translate(378px, -300px);
+    }
+    .page10__car, .page10__grass1, .page10__grass2, .page10__bus, .page10__sit, .page10__vishka{
+        transform: scale(.4);
+    }
+    .page10__car{
+        bottom: 39px;
+    }
+    .page10__bus{
+        bottom: -44px;
+    }
+    .page10__sit{
+        bottom: 67px;
+    }
+    .page10__grass1{
+        bottom: 92px;
+        right: -120px;
+    }
+    .page10__grass2{
+        bottom: 92px;
+        right: -30px;
+    }
+    .page10__vishka{
+        bottom: -200px;
+    }
 }
 @media(max-width: 660px){
     .nav__container{
@@ -1697,5 +1732,347 @@ p.span__gold {
     }
 }
 @media(max-width: 600px){
-    
+    .page2{
+        height: 1000px;
+    }
+    .page2__text{
+        transform: scale(.7);
+    }
+    .page2__tablo{
+        top: -300px;
+    }
+    .page2__arrows{
+        transform: scale(.6);
+    }
+    .arrow{
+        left: -480px;
+        top: 260px;
+    }
+    .menu__title{
+        max-width: 400px;
+        font-size: 12px;
+    }
+    .page7__image{
+        left: -160px;
+        transform: scale(.4);
+    }
+    .page10__contacts {
+        min-width: 700px;
+        transform: scale(.4) translate(300px, -300px);
+    }
+    .button__gif1 {
+        transform: translate(92px, 0) scale(.3);
+    }
+    .button__gif2 {
+        transform: translate(-92px, 0) scale(.3);
+    }
+    .menu__item{
+        font-size: 12px;
+    }
+    .page4 {
+        min-height: 243px;
+        height: 350px;
+    }
+    .slider__container{
+        max-width: 400px;
+    }
+    .slider__item__image {
+        transform: scale(.25);
+    }
+    .slider__item__button {
+        font-size: 6px;
+        max-width: 115px;
+        height: 30px;
+        margin-top: -150px;
+    }
+    .slider__item{
+        margin: 30px 0;
+    }
+    .itc-slider__btn{
+        top: calc(50% - 50px);
+        transform: scale(.5);
+    }
+    .page4__title {
+        font-size: 14px;
+        width: 300px;
+        height: 60px;
+    }
+    .page5__subtitle{
+        max-width: 400px;
+        font-size: 30px;
+    }
+    .page5__subtitle--double{
+        top: -62px;
+    }
+    .page5__subtitle img{
+        transform: translate(0, -35px) scale(.6);
+    }
+    .page5__wrapper, .page5{
+        min-height: 900px;
+    }
+    .page5__shop {
+        transform: scale(.5) translate(-100%, 0);
+        bottom: 26px;
+    }
+    .page5__grass1, .page5__grass5{
+        transform: scale(.4);
+        bottom: 93px;
+    }
+    .page5__weapon1, .page5__weapon2{
+        max-width: 50px;
+        bottom: 220px;
+    }
+    .page6{
+        height: 800px;
+    }
+    .page7__image{
+        top: -30px;
+    }
+    .page7__items{
+        margin-top: 250px;
+    }
+    .page8__mem__img {
+        max-width: 190px;
+    }
+    .page9{
+        min-height: 680px;
+        padding-top: 0;
+    }
+    .game {
+        transform: scale(.6);
+        margin-bottom: -90px;
+        margin-top: -100px;
+        width: 800px;
+    }
+    .page10__car, .page10__bus{
+        left: -200px;
+    }
+    .page10__vishka{
+        left: -150px;
+    }
+    .page10__sit{
+        left: 210px;
+    }
+    .page10__sky{
+        left: 175px;
+    }
+}
+@media(max-width: 500px){
+    .page1 {
+        min-height: 327px;
+        height: 550px;
+    }
+    .nav__left {
+        transform: scale(.7) translate(0px, 50px);
+    }
+    .page1__img {
+        max-height: 160px;
+    }
+    .page1__logoText{
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .page1__titleText{
+        font-size: 56px;
+    }
+    .page1__titleText--double{
+        font-size: 56px;
+    }
+    .page2 {
+        height: 860px;
+    }
+    .page2__text {
+        transform: scale(.6) translate(-50px, 0);
+    }
+    .page2__tablo {
+        top: -400px;
+        right: -515px;
+        transform: scale(.35);
+    }
+    .page2__arrows {
+        transform: scale(.45);
+    }
+    .arrow{
+        top: 135px;
+    }
+    .page3{
+        height: 1100px;
+    }
+    .menu__items{
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(6, 100px);
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .menu__item{
+        max-width: 300px;
+        width: 100%;
+    }
+    .itc-slider__btn {
+        top: calc(50% - -68px);
+    }
+    .itc-slider__btn_prev{
+        transform: translate(-50%, 0) scale(.5);
+        left: 40%;
+    }
+    .itc-slider__btn_next{
+        transform: translate(50%, 0) scale(.5);
+        right: 40%;
+    }
+    .page5__title{
+        font-size: 16px;
+    }
+    .page5__title--double {
+        top: -17px;
+        left: -1px;
+    }
+    .page5__subtitle{
+        max-width: 300px;
+    }
+    .page5__weapon1{
+        left: 38%;
+    }
+    .page5__weapon2{
+        left: 56%;
+    }
+    .page6{
+        padding-top: 30px;
+    }
+    .page6__items{
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: repeat(4, 80px);
+    }
+    .page6__item{
+        line-height: 1.5;
+        height: 80px;
+    }
+    .page6__fire{
+        right: 140px;
+    }
+    .page7__image{
+        left: -240px;
+    }
+    .page7__items{
+        max-width: 300px;
+    }
+    .page7__item{
+        margin-bottom: 25px;
+        font-size: 12px;
+        height: 60px;
+    }
+    .page8{
+        min-height: 670px;
+    }
+    .page8__title{
+        margin-bottom: 40px;
+    }
+    .page8__mem{
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .page8__mem__img{
+        max-width: 150px;
+    }
+    .page8__mem__last{
+        margin-right: 0;
+    }
+    .page8__memes__wrapper{
+        margin-bottom: 0;
+    }
+    .page9{
+        min-height: 540px;
+    }
+    .game{
+        width: 600px;
+    }
+    .page10__sit, .page10__grass1, .page10__grass2{
+        display: none;
+    }
+    .page10__contacts {
+        transform: scale(.4) translate(415px, -300px);
+    }
+    .page10__heart{
+        left: -160px;
+    }
+}
+@media(max-width: 400px){
+    .nav__left {
+        transform: scale(.7) translate(-40px, 50px);
+    }
+    .page3{
+        height: 900px;
+    }
+    .menu__title{
+        max-width: 300px;
+        height: 90px;
+        font-size: 10px;
+    }
+    .button__gif1{
+        transform: scale(.2) translate(550px, 0);
+    }
+    .button__gif2{
+        transform: scale(.2) translate(-550px, 0);
+    }
+    .menu__items{
+        grid-template-rows: repeat(6, 70px);
+    }
+    .menu__item{
+        max-width: 250px;
+        height: 70px;
+    }
+
+
+
+    .slider__container{
+        max-width: 250px;
+    }
+    .itc-slider__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .page5__wrapper, .page5{
+        min-height: 770px;
+    }
+    .page5__star1, .page5__star2{
+        top: 70px;
+        max-width: 25px;
+    }
+    .page5__box1{
+        bottom: 540px;
+    }
+    .page5__box3{
+        bottom: 450px;
+    }
+    .page5__box2{
+        bottom: 400px;
+    }
+    .page5__box4{
+        bottom: 360px;
+    }
+    .page5__grass1, .page5__grass5 {
+        transform: scale(.3);
+        bottom: 87px;
+    }
+    .page5__grass1{
+        left: -150px;
+    }
+    .page5__grass5{
+        right: -140px;
+    }
+    .page5__fire {
+        left: 80%;
+    }
+    .page6__grass{
+        display: none;
+    }
+    .page6__fire{
+        right: 40px;
+    }
+    .page7__image{
+        transform: scale(.3);
+        left: -280px;
+    }
+    .game{
+        width: 500px;
+    }
 }
