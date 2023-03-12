@@ -1882,11 +1882,11 @@ p.span__gold {
         height: 860px;
     }
     .page2__text {
-        transform: scale(.6) translate(-50px, 0);
+        transform: scale(.6) translate(-20px, 0);
     }
     .page2__tablo {
         top: -400px;
-        right: -515px;
+        right: -530px;
         transform: scale(.35);
     }
     .page2__arrows {
@@ -1934,6 +1934,38 @@ p.span__gold {
     }
     .page5__weapon2{
         left: 56%;
+    }
+    .page5__star1, .page5__star2{
+        top: 70px;
+        max-width: 25px;
+    }
+    .page5__wrapper, .page5{
+        min-height: 770px;
+    }
+    .page5__box1{
+        bottom: 540px;
+    }
+    .page5__box3{
+        bottom: 450px;
+    }
+    .page5__box2{
+        bottom: 400px;
+    }
+    .page5__box4{
+        bottom: 360px;
+    }
+    .page5__grass1, .page5__grass5 {
+        transform: scale(.3);
+        bottom: 87px;
+    }
+    .page5__grass1{
+        left: -150px;
+    }
+    .page5__grass5{
+        right: -140px;
+    }
+    .page5__fire {
+        left: 80%;
     }
     .page6{
         padding-top: 30px;
