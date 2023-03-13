@@ -18,6 +18,18 @@ const nav = document.querySelector('.nav'),
           nav.classList.remove("fixed");
         }}});
 
+        scrollPrev = 0;
+      $(window).scroll(function() {
+        let scrolled = $(window).scrollTop();
+      
+        if (scrolled > 100 && scrolled > scrollPrev ) {
+          nav.classList.add('hidden');
+        } else {
+          nav.classList.remove('hidden');
+        }
+        scrollPrev = scrolled;
+      });
+
 $('[data-scroll]').on('click', function(event) {
   event.preventDefault();
   

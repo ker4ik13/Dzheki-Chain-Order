@@ -60,6 +60,9 @@ body {
     background-color: #000;
     border-bottom: 2px solid #ff63d8;
 }
+.nav.hidden{
+    transform: translate(0, -150px);
+}
 .nav__container{
     max-width: 1500px;
     width: 100%;
