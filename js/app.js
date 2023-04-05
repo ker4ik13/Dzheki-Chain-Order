@@ -30,6 +30,7 @@ const nav = document.querySelector('.nav'),
         scrollPrev = scrolled;
       });
 
+
 $('[data-scroll]').on('click', function(event) {
   event.preventDefault();
   
@@ -46,10 +47,3 @@ $('[data-scroll]').on('click', function(event) {
   }, 1000)
   }
 })
-
-
-
-
-
-
-

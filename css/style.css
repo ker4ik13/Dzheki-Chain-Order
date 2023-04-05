@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 @font-face {
     font-family: Press;
     font-display: swap;
-    src: url('/fonts/Press.woff2') format("woff2"),url('/fonts/Press.woff') format("woff");
+    src: url('../fonts/Press.woff2') format("woff2"),url('../fonts/Press.woff2') format("woff");
     font-weight: 400;
     font-style: normal
 }
@@ -54,7 +54,7 @@ body {
     background-color: transparent;
     position: fixed;
     z-index: 999;
-    transition: all .2s ease-in;
+    transition: all .3s ease-in;
 }
 .nav.fixed{
     background-color: #000;
@@ -62,6 +62,9 @@ body {
 }
 .nav.hidden{
     transform: translate(0, -150px);
+}
+.nav.show{
+    transform: translate(0, 0);
 }
 .nav__container{
     max-width: 1500px;
@@ -147,14 +150,14 @@ body {
     color: #21EF80;
 }
 .page1__bottom::before{
-    content: url('/img/1page/gif-money.gif');
+    content: url('../img/1page/gif-money.gif');
     position: absolute;
     top: -240px;
     left: -800px;
     transform: scale(.25);
 }
 .page1__bottom::after{
-    content: url('/img/1page/gif-money.gif');
+    content: url('../img/1page/gif-money.gif');
     position: absolute;
     top: -240px;
     left: 280px;
@@ -164,7 +167,7 @@ body {
 /* page2 */
 
 .page2{
-    background: url('/img/2page/bg2.png') 0 0/cover no-repeat;
+    background: url('../img/2page/bg2.png') 0 0/cover no-repeat;
     overflow: hidden;
     padding-top: 50px;
 }
@@ -250,7 +253,7 @@ body {
     z-index: 3;
     width: 162px;
     height: 131px;
-    background: url('/img/2page/arrow1.png') no-repeat;
+    background: url('../img/2page/arrow1.png') no-repeat;
     animation: page2Arrow 2s ease-in-out infinite;
 
 }
@@ -258,15 +261,15 @@ body {
 
 @keyframes page2Arrow{
     0%{
-        background: url('/img/2page/arrow1.png') no-repeat;
+        background: url('../img/2page/arrow1.png') no-repeat;
         transform: translate(0px, 0px);
     }
     50%{
-        background: url('/img/2page/arrow2.png') no-repeat;
+        background: url('../img/2page/arrow2.png') no-repeat;
         transform: translate(100px, -30px);
     }
     100%{
-        background: url('/img/2page/arrow1.png') no-repeat;
+        background: url('../img/2page/arrow1.png') no-repeat;
         transform: translate(0px, 0px);
     }
 }
@@ -434,7 +437,7 @@ p.span__gold {
 
 .page5 {
     min-height: 1080px;
-    background: url('/img/5page/bg.png') 0 0/cover no-repeat;
+    background: url('../img/5page/bg.png') 0 0/cover no-repeat;
     padding-top: 100px;
 }
 .page5__wrapper{
@@ -633,7 +636,7 @@ p.span__gold {
 .page6 {
     min-height: 1080px;
     overflow: hidden;
-    background: url('/img/5page/bg.png') 0 0/cover no-repeat;
+    background: url('../img/5page/bg.png') 0 0/cover no-repeat;
     padding-top: 100px;
 }
 .page6__wrapper{
@@ -813,7 +816,7 @@ p.span__gold {
 /* Page 10 */
 .page10 {
     min-height: 1080px;
-    background: url('/img/5page/bg.png') 0 0/cover no-repeat;
+    background: url('../img/5page/bg.png') 0 0/cover no-repeat;
 }
 .page10__wrapper{
     position: relative;
