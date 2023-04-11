@@ -785,34 +785,164 @@ p.span__gold {
     width: 100%;
     margin: 0 auto;
     padding-top: 50px;
+    position: relative;
 }
 .page9__title {
     margin: 0 auto 50px;
 }
-.page9__game {
-    margin: 0 auto;
+.page9__img{
+    display: flex;
+    justify-content: center;
+}
+.page9__img img{
+    max-width: 200px;
+}
+.page9__wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.page9_1{
+    position: absolute;
+    max-width: 900px;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0);
+}
+.page9_2{
+    position: absolute;
+    top: 5px;
+    left: calc(50% + 5px);
+    transform: translate(-50%, 0);
+    max-width: 900px;
+}
+.page9__titleText {
+    font-size: 6vw;
+    max-width: 900px;
+    line-height: 1.5;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+    color: #ff63d8;
+}
+.page9__titleText--double{
+    top: 25px;
+    left: 305px;
+    font-size: 6vw;
+    max-width: 900px;
+    line-height: 1.5;
+    color: #21EF80;
+    text-align: center;
+    cursor: pointer;
+}
+.invisible{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    padding: 60px 30px;
+    border-radius: 24px;
+    border: 3px solid #ff63d8;
+    z-index: 1000;
+    min-width: 270px;
+    max-width: 600px;
+    width: 100%;
+    transition: opacity .2s linear, visibility .2s linear;
+}
+.form__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.form__title__text {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.close__form {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: relative;
 }
-.game {
-    height: 520px;
-    max-width: 800px;
+.close__form:hover::before{
+    transform: rotate(-225deg);
+}
+.close__form:hover::after{
+    transform: rotate(-135deg);
+}
+.close__form::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: rotate(-45deg);
+    width: 3px;
+    height: 30px;
+    background-color: #ff63d8;
+    transition: transform .4s ease-in-out;
+}
+.close__form::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 45%;
+    transform: rotate(45deg);
+    width: 3px;
+    height: 30px;
+    background-color: #ff63d8;
+    transition: transform .4s ease-in-out;
+}
+form::placeholder{
+    color: #fefefe;
+}
+.form__input {
+    font-size: 16px;
+    color: #fff;
     width: 100%;
+    padding: 8px;
+    background-color: #333;
+    border-radius: 8px;
+    caret-color: #fff;
+    min-height: 50px;
+}
+.form__button {
+    background-color: #000;
+    border-radius: 16px;
+    border: 2px solid #ff63d8;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ff63d8;
+    transition: background-color .2s linear;
+    width: 100%;
+}
+.form__button:hover{
+    background-color: #222;
+}
+.status {
+    font-size: 20px;
     text-align: center;
-    margin-bottom: 40px;
+    color: #ff63d8;
 }
-.page9__button{
-
-}
-.page9__link{
-    transition: filter .2s linear
-}
-.page9__link:hover{
-    filter: invert(1);
-}
-
 /* Page 10 */
 .page10 {
     min-height: 1080px;
@@ -1736,6 +1866,12 @@ p.span__gold {
     .page8__mem__img{
         max-width: 220px;
     }
+    .page9__img img{
+        max-width: 150px;
+    }
+    .form{
+        max-width: 400px;
+    }
 }
 @media(max-width: 600px){
     .page2{
@@ -2058,9 +2194,6 @@ p.span__gold {
         max-width: 250px;
         height: 70px;
     }
-
-
-
     .slider__container{
         max-width: 250px;
     }
@@ -2112,5 +2245,28 @@ p.span__gold {
     }
     .game{
         width: 500px;
+    }
+    .page9{
+        min-height: 670px;
+    }
+    .page9__title{
+        width: 325px;
+    }
+    .form{
+        max-width: 300px;
+        padding: 30px 15px;
+        z-index: 1000;
+        top: 50%;
+        gap: 20px;
+    }
+    .form__title__text{
+        font-size: 16px;
+    }
+    .form__input{
+        font-size: 12px;
+        min-height: 30px;
+    }
+    .form__button{
+        padding: 10px 20px;
     }
 }

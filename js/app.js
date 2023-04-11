@@ -1,4 +1,8 @@
-const nav = document.querySelector('.nav'),
+jQuery(document).ready(function () {
+     
+  // Навигация
+
+  const nav = document.querySelector('.nav'),
       page1 = $('#page1'),
       page1Height = page1.innerHeight(),
       navBtn = $('#nav__btn');
@@ -29,7 +33,8 @@ const nav = document.querySelector('.nav'),
         }
         scrollPrev = scrolled;
       });
-
+    
+// Скролл
 
 $('[data-scroll]').on('click', function(event) {
   event.preventDefault();
@@ -46,4 +51,50 @@ $('[data-scroll]').on('click', function(event) {
       scrollTop: elementOffset
   }, 1000)
   }
-})
+});
+
+// Открытие формы
+
+const openFormButton = document.querySelector('.page9__titleText');
+
+const form = document.querySelector('.form');
+openFormButton.addEventListener('click', (event) => {
+  event.preventDefault;
+  form.classList.remove('invisible');
+  closeFormButton.addEventListener('click', (event) => {
+    event.preventDefault;
+    form.classList.add('invisible');
+  });
+});
+
+// Маска формы
+
+const closeFormButton = document.querySelector('.close__form');
+
+ jQuery('.form__button').click( function() {
+   var form = jQuery(this).closest('form');
+   
+   if ( form.valid() ) {
+     var actUrl = form.attr('action');
+
+     jQuery.ajax({
+       url: actUrl,
+       type: 'post',
+       dataType: 'html',
+       data: form.serialize(),
+       success: function(data) {
+          form.html(data);
+          form.find('.status').html('форма отправлена успешно');
+          setTimeout(() => {
+            form.addClass('invisible');
+          }, 1000);
+       },
+       error:	 function() {
+            form.find('.status').html('серверная ошибка');
+       }
+     });
+   }
+ });
+});
+
+

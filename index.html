@@ -257,15 +257,29 @@
     <section class="page9" id="page9">
         <div class="container">
             <div class="page4__title page9__title">
-                <p>Выйграй nft!</p>
+                <p>Джеки чейн дарит nft!</p>
             </div>
-            <div class="page9__game">
-                <iframe class="game" src="https://supermario-game.com/ru/fullscreen" frameborder="0" scrolling="no"></iframe>
-                <div class="page9__button">
-                    <a target="_blank" href="https://supermario-game.com/ru/fullscreen" class="page9__link"><img src="img/2page/start.png" alt="Старт"></a>
+            <form action="sender.php" method="post" class="form invisible">
+                <div class="form__title">
+                    <p class="form__title__text">Получить NFT</p>
+                    <button class="close__form" name="Закрыть форму"></button>
+                </div>
+                <input type="text" class="form__input" name="name" placeholder="Имя" required>
+                <input type="email" class="form__input" name="email" placeholder="E-Mail" required>
+                <button type="button" class="form__button">Отправить</button>
+                <div class="status"></div>
+            </form>
+            <div class="page9__img">
+                <img src="img/10page/arrow-down.png" alt="">
+            </div>
+            <div class="page9__wrapper">
+                <div class="page9_1">
+                    <p class="page9__titleText">Получить NFT</p>
+                </div>
+                <div class="page9_2">
+                    <p class="page9__titleText--double">Получить NFT</p>
                 </div>
             </div>
-            
         </div><!-- container -->
     </section><!-- page9 -->
     <section class="page10" id="page10">
@@ -298,8 +312,12 @@
         </div><!-- page10__wrapper -->
     </section><!-- page10 -->
 </div><!-- wrapper -->
+
+<!-- Scripts -->
 <script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/itc-slider.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 </body>
 </html>
