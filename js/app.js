@@ -1,5 +1,3 @@
-// jQuery(document).ready(function () {
-     
   // Навигация
 
   const nav = document.querySelector('.nav'),
@@ -52,11 +50,30 @@ $('[data-scroll]').on('click', function(event) {
   }, 1000)
   }
 });
+// видео page 2
+const video = document.querySelector('.page2__video');
+const arrow = document.querySelector('.arrow');
+const startButton = document.querySelector('.page2__start');
 
-// Открытие формы
+startButton.addEventListener('click', () => {
+  video.play();
+  startButton.classList.add('invisible');
+  arrow.classList.add('invisible');
+});
+
+video.addEventListener('play', () => {
+  startButton.classList.add('invisible');
+  arrow.classList.add('invisible');
+});
+
+video.addEventListener('pause', () => {
+  startButton.classList.remove('invisible');
+  arrow.classList.remove('invisible');
+});
+
+// form page 9
 
 const openFormButton = document.querySelector('.page9__titleText');
-
 const form = document.querySelector('.form');
 const closeFormButton = document.querySelector('.close__form');
 openFormButton.addEventListener('click', (event) => {
@@ -68,47 +85,24 @@ openFormButton.addEventListener('click', (event) => {
   });
 });
 
-// form.addEventListener('submit', formSend);
+// отправка формы (не работает)
+jQuery('.form__button').click( function() {
+  var form = jQuery(this).closest('form');
+  
+  if ( form.valid() ) {
+    var actUrl = form.attr('action');
 
-// async function formSend(event){
-//   event.preventDefault();
-//   let error = formValidate(form);
-
-// }
-
-// function formValidate(form){
-//   let error = 0;
-//   let formReq = document.querySelectorAll('required');
-
-//   for (let i = 0; i < formReq.length; i++){
-//     const input = formReq[i];
-//   }
-// }
-
-
-
-
-
-
-
-
- jQuery('.form__button').click( function() {
-   var form = jQuery(this).closest('form');
-   
-   if ( form.valid() ) {
-     var actUrl = form.attr('action');
-
-     jQuery.ajax({
-       url: actUrl,
-       type: 'post',
-       dataType: 'html',
-       data: form.serialize(),
-       success: function() {
-          form.find('.status').html('форма отправлена успешно');
-       },
-       error: function() {
-          form.find('.status').html('серверная ошибка');
-       }
-     });
-   }
- });
+    jQuery.ajax({
+      url: actUrl,
+      type: 'post',
+      dataType: 'html',
+      data: form.serialize(),
+      success: function() {
+         form.find('.status').html('форма отправлена успешно');
+      },
+      error: function() {
+         form.find('.status').html('серверная ошибка');
+      }
+    });
+  }
+});

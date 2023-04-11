@@ -40,7 +40,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #000; 
 }
-
+.invisible{
+    opacity: 0;
+    visibility: hidden;
+}
 .wrapper{
     width: 100%;
     height: 100%;
@@ -242,6 +245,17 @@ body {
     z-index: 10;
     transition: filter .2s linear;
     cursor: pointer;
+    transition: opacity .2s linear, visibility .2s linear;
+}
+.page2__video{
+    max-width: 830px;
+    position: absolute;
+    top: 36px;
+    left: 160px;
+    z-index: 10;
+}
+.page2__video:playing .arrow{
+    display: none;
 }
 .page2__start:hover{
     filter: invert(1);
@@ -250,12 +264,12 @@ body {
     position: absolute;
     top: 430px;
     left: -1250px;
-    z-index: 3;
+    z-index: 11;
     width: 162px;
     height: 131px;
     background: url('../img/2page/arrow1.png') no-repeat;
     animation: page2Arrow 2s ease-in-out infinite;
-
+    transition: opacity .2s linear, visibility .2s linear;
 }
 
 
@@ -363,6 +377,7 @@ p.span__gold {
     text-transform: uppercase;
     margin: 0 auto;
     cursor: default;
+    text-align: center;
 }
 .slider__item {
     margin: 90px 0;
@@ -789,6 +804,8 @@ p.span__gold {
 }
 .page9__title {
     margin: 0 auto 50px;
+    text-align: center;
+    padding: 20px;
 }
 .page9__img{
     display: flex;
@@ -838,6 +855,7 @@ p.span__gold {
     color: #21EF80;
     text-align: center;
     cursor: pointer;
+    animation: rainbow 1s linear infinite;
 }
 .invisible{
     opacity: 0;
@@ -1081,6 +1099,28 @@ form::placeholder{
     left: 150px;
     transform: scale(.3);
 }
+
+@keyframes rainbow{
+    0%{
+        color: #21EF80;
+    }
+    25%{
+        color: #21d0ef;
+    }
+    48%{
+        color: #2124ef;
+    }
+    73%{
+        color: #b1ef21;
+    }
+    90%{
+        color: #ef2121;
+    }
+    100%{
+        color: #21EF80;
+    }
+}
+
 
 /* Adaptive */
 
@@ -1674,11 +1714,9 @@ form::placeholder{
     .page9{
         min-height: 900px;
     }
-    .game{
-        transform: scale(.8);
-    }
-    .page9__link img{
-        transform: scale(.8);
+    .page9_2 {
+        top: 3px;
+        left: calc(50% + 3px);
     }
     .page10__contacts{
         margin-right: -170px;
@@ -1980,11 +2018,10 @@ form::placeholder{
         min-height: 680px;
         padding-top: 0;
     }
-    .game {
-        transform: scale(.6);
-        margin-bottom: -90px;
-        margin-top: -100px;
-        width: 800px;
+    .page9__title{
+        width: 330px;
+        height: 80px;
+        line-height: 1.5;
     }
     .page10__car, .page10__bus{
         left: -200px;
@@ -2251,6 +2288,13 @@ form::placeholder{
     }
     .page9__title{
         width: 325px;
+    }
+    .page9_2 {
+        top: 2px;
+        left: calc(50% + 2px);
+    }
+    .page9__img img{
+        max-width: 120px;
     }
     .form{
         max-width: 300px;
