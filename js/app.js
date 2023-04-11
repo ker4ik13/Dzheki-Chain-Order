@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+// jQuery(document).ready(function () {
      
   // Навигация
 
@@ -58,18 +58,39 @@ $('[data-scroll]').on('click', function(event) {
 const openFormButton = document.querySelector('.page9__titleText');
 
 const form = document.querySelector('.form');
+const closeFormButton = document.querySelector('.close__form');
 openFormButton.addEventListener('click', (event) => {
-  event.preventDefault;
+  event.preventDefault();
   form.classList.remove('invisible');
   closeFormButton.addEventListener('click', (event) => {
-    event.preventDefault;
+    event.preventDefault();
     form.classList.add('invisible');
   });
 });
 
-// Маска формы
+// form.addEventListener('submit', formSend);
 
-const closeFormButton = document.querySelector('.close__form');
+// async function formSend(event){
+//   event.preventDefault();
+//   let error = formValidate(form);
+
+// }
+
+// function formValidate(form){
+//   let error = 0;
+//   let formReq = document.querySelectorAll('required');
+
+//   for (let i = 0; i < formReq.length; i++){
+//     const input = formReq[i];
+//   }
+// }
+
+
+
+
+
+
+
 
  jQuery('.form__button').click( function() {
    var form = jQuery(this).closest('form');
@@ -82,19 +103,12 @@ const closeFormButton = document.querySelector('.close__form');
        type: 'post',
        dataType: 'html',
        data: form.serialize(),
-       success: function(data) {
-          form.html(data);
+       success: function() {
           form.find('.status').html('форма отправлена успешно');
-          setTimeout(() => {
-            form.addClass('invisible');
-          }, 1000);
        },
-       error:	 function() {
-            form.find('.status').html('серверная ошибка');
+       error: function() {
+          form.find('.status').html('серверная ошибка');
        }
      });
    }
  });
-});
-
-
